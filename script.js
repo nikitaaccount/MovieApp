@@ -1,4 +1,4 @@
-const API_KEY = config.apiKey;
+const API_KEY = config.apiKey|| process.env.apiKey;
 const BASE_URL = 'https://api.themoviedb.org/3';
 const SEARCH_URL = `${BASE_URL}/search/movie`;
 const POPULAR_MOVIES_URL = `${BASE_URL}/movie/popular`;
